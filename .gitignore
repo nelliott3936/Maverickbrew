@@ -1,0 +1,22 @@
+# Ignore OS-generated files
+.DS_Store
+
+# Ignore the "Portable Ruby" (The Catalina Trap)
+# We want to use the System Ruby on 10.9
+/Library/Homebrew/vendor/portable-ruby
+
+# Ignore caches and logs
+/Library/Caches/Homebrew/
+/Library/Logs/Homebrew/
+
+# Ignore any other Taps that aren't your Core Tap
+# This keeps your repo clean
+/Library/Taps/*
+!/Library/Taps/homebrew/
+
+# UNIGNORE: The Core Tap (This is your 2020 recipe goldmine)
+!/Library/Taps/homebrew/homebrew-core/
+
+# UNIGNORE: The actual tool and bin
+!/bin/brew
+!/Library/Homebrew/
